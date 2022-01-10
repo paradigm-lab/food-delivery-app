@@ -24,7 +24,7 @@ class CustomAppBar extends StatelessWidget {
           GestureDetector(
             onTap: leftCallback != null ? () => leftCallback!() : null,
             child: Container(
-            padding: const EdgeInsets.fromLTRB(16, 8, 8, 8),
+            padding: const EdgeInsets.all(8),
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.white,
