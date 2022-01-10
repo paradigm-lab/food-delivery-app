@@ -1,3 +1,5 @@
+import './food.dart';
+
 class Restaurant {
   String name;
   String waitTime;
