@@ -60,8 +60,14 @@ class RestaurantInfo extends StatelessWidget {
                       ],
                     )
                   ],
-
+                  
                 ),
+                
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset(restaurant.logoUrl, width: 80,),
+                )
+                
               ],
             )
         ],
