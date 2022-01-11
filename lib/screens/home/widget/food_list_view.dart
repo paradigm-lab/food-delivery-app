@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/models/restaurant.dart';
+import './food_item.dart';
 
 
 
@@ -16,8 +17,22 @@ class FoodListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final category = restaurant.menu.keys.toList();
+
       return Container(
-        child: Text("List View"),
+        padding: const EdgeInsets.symmetric(horizontal: 25),
+        child: PageView(
+          controller: pageController,
+          onPageChanged: (index) => callback(index),
+          children:
+            category.map((e) => ListView.separated(
+                itemBuilder: (context, index) => FoodItem(
+                    restaurant.menu[category[selected]]![index]
+                ),
+                separatorBuilder: (_, index) => const SizedBox(height: 15),
+                itemCount: restaurant.menu[category[selected]]!.length
+            )).toList()
+        )
       );
   }
 
