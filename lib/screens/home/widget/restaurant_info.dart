@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/models/restaurant.dart';
+import 'package:food_delivery_app/constants/colors.dart';
 
 class RestaurantInfo extends StatelessWidget {
 
@@ -78,6 +79,19 @@ class RestaurantInfo extends StatelessWidget {
                 Text('"${restaurant.desc}"',
                 style: const TextStyle(fontSize: 16)
                 ),
+                Row(
+                  children: [
+                      const Icon(Icons.star_outline,
+                      color: kPrimaryColor),
+                    Text('${restaurant.score}',
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(width: 15)
+                  ],
+                )
               ],
             )
         ],
