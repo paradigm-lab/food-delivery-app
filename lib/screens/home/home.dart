@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/constants/colors.dart';
 import 'package:food_delivery_app/models/restaurant.dart';
 import 'package:food_delivery_app/screens/home/widget/food_list.dart';
+import 'package:food_delivery_app/screens/home/widget/food_list_view.dart';
 import 'package:food_delivery_app/screens/home/widget/restaurant_info.dart';
 import 'package:food_delivery_app/widgets/custom_app_bar.dart';
 
