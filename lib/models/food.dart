@@ -124,4 +124,62 @@ class Food {
       ),
     ];
   }
+
+  static List<Food> generatePopularFoods() {
+    return [
+
+      Food(
+          'assets/images/dish3.jpeg',
+          'NO3. in Sales',
+          'Pizza',
+          '10 min',
+          4.8,
+          '325 kcal',
+          12,
+          1,
+          [
+            {
+              'Noodles': 'assets/images/dish1.jpg',
+            },
+            {
+              'Shrimp': 'assets/images/dish2.jpeg',
+            },
+            {
+              'Egg': 'assets/images/dish3.jpeg',
+            },
+            {
+              'Scallion': 'assets/images/dish4.jpeg',
+            },
+          ],
+          'Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients.'
+      ),
+
+      Food(
+          'assets/images/dish4.jpg',
+          'NO4. in Sales',
+          'Ugali',
+          '15 min',
+          4.8,
+          '325 kcal',
+          12,
+          1,
+          [
+            {
+              'Noodles': 'assets/images/dish1.jpg',
+            },
+            {
+              'Shrimp': 'assets/images/dish2.jpeg',
+            },
+            {
+              'Egg': 'assets/images/dish3.jpeg',
+            },
+            {
+              'Scallion': 'assets/images/dish4.jpeg',
+            },
+          ],
+          'Ugali, or sima, is a type of stiff maize flour porridge made in Africa.[1] It is also known as vuswa, bogobe, fufu, gauli, gima, isitshwala, kimnyet, kuon, mieliepap, ngima, nshima, obokima, ovuchima.'
+      ),
+    ];
+  }
+
 }
