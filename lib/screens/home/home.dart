@@ -13,6 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   var selected = 0;
   final restaurant = Restaurant.generateRestaurant();
+  final pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,19 @@ class _HomePageState extends State<HomePage> {
                 setState(() {
                   selected = index;
                 });
+                pageController.jumpToPage(index);
               }, restaurant),
+          Expanded(
+              child: FoodListView(
+                selected,
+                  (int index) {
+                    setState(() {
+                      selected = index;
+                    });
+                  },
+                pageController,
+              ),
+          )
         ],
       ),
     );
