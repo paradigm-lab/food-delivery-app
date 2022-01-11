@@ -40,8 +40,15 @@ class RestaurantInfo extends StatelessWidget {
                                 style: const TextStyle(color: Colors.white),
                           ),
                         ),
+                        const SizedBox(width: 10),
+                        Text(restaurant.distance,
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey.withOpacity(0.4),
+                            ),
+                        ),
 
-                        Text(restaurant.distance),
                         Text(restaurant.label),
                       ],
                     )
